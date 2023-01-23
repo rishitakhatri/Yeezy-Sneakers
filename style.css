@@ -204,7 +204,8 @@ button:hover {
     justify-content: center;
     text-align: center; 
     align-items: center;
-
+    margin-top: -25px;
+    margin-bottom: 40px;
 }
 
 #featured .row .product img{
@@ -215,7 +216,6 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
 #featured .row .product button{
@@ -234,19 +234,75 @@ button:hover {
     border-bottom: 1px solid var(--15);
 }
 
-#footer {
-    max-width: 1170px;
-    background-color: red;
-    margin: auto;
+#foot{
+    height: 35vh;
+    background-color: var(--5);
 }
 
-#footer .row {
-    display: flex;
-    flex-wrap: wrap;
+.foooter-col{
+    margin-top: 30px;
+    width: 25%;
+    padding: 0 50px; 
+}
+.foooter-col h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin:20px 0;
+    font-weight: 700;
+    position: relative;
+}
+.foooter-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--30);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
-.foooter{
-    border: 2px solid #1d1d1d;
-    background-color: #1d1d1d;
-    padding: 70px 0;
+.foooter-col ul li :not(:last-child) {
+    margin-bottom: 10px;
+
+} 
+
+.foooter-col ul li a {
+    margin: 10px 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #484848;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    transition: all 0.3s ease;
+} 
+.foooter-col ul li a:hover{
+color: #1d1d1d;
+padding-left: 5px ;
+
 }
+
+
+.foooter-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--30);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(234, 228, 228);
+    transition: all 0.3s ease;
+
+}
+.foooter-col .social-links a:hover{
+ color: #24262b;
+ background-color: #ffff;   
+}
+
+
+
+
