@@ -71,13 +71,14 @@ button:hover {
 
 .navbar {
     font-size: 16px;
+    box-shadow: 0px 5px 10px rgb(228, 227, 234);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar svg:hover,
-.navbar-light .navbar-nav .nav-link.active
-.navbar svg.ative {
-    color: #BFAD9A;
+.navbar-light .navbar-nav .nav-link.active,
+.navbar svg.active {
+    color: rgb(212, 130, 14);
 }
 
 .navStyle {
@@ -113,9 +114,6 @@ button:hover {
     width: 25px;
     height: 25px;
 }
-
-
-
 
 
 #home {
@@ -180,6 +178,8 @@ button:hover {
 
 }
 
+
+
 #new .one .details {
     display: flex;
     flex-direction: column;
@@ -223,8 +223,7 @@ button:hover {
     position: relative;
 }
 
-#featured .row .product button{
-    display: inline-block;
+#featured .row .product .buy-btn{
     font-size: 14px;
     font-weight: 500;
     color: #2a2a2a;
@@ -232,12 +231,34 @@ button:hover {
     margin-top: 10px;
     text-transform: uppercase;
     border-bottom: 5px solid var(--30);
-    transition: 0.3s ease;
+    transition: 0.3s all;
+    transform: translateY(20px);
+    opacity: 0;
+
+
 }
-#featured .row .product button:hover{
+
+
+#featured .row .product .p-preco {
+    font-size: 23px;
+    padding-top: 15px;
+
+}
+
+#featured .row .product .p-name {
+    font-size: 25px;
+    padding-top: 15px;
+
+}
+
+#featured .row .product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
     color: var(--30);
     border-bottom: 1px solid var(--15);
 }
+
+
 
 #foot{
     height: 35vh;
