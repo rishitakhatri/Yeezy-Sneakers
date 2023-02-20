@@ -12,10 +12,10 @@ closeBag.onclick = () => {
 };
 
 //bag working 
-if (document.readyState == 'loading') {
+if (document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded', ready);
 } else {
-    ready ();
+    ready();
 }
 
 //making function
